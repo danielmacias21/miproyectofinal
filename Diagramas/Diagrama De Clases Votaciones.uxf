@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.5.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>400</x>
+      <y>176</y>
+      <w>144</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>Estudiante
+--
++ nombre 
+- numero_Identificacion
++ curso
++ genero
++ edad
++ jornada
++ correo_Electronico
+--
+# realizar_Voto()
+# inscribir_Documento()
+- elegir_Candidato()
++ consultar_Resultados()
++ observar_Propuestas()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>208</x>
+      <y>504</y>
+      <w>136</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>Candidato
+--
++ numero_Candidato
++ tipo_Representacion
++ cantida_Propuestas
++ color_Identificacion
++ imagen
+--
++ presentar_Propuestas()
++ ganar_Elecciones()
++ perder_Elecciones()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>88</x>
+      <y>0</y>
+      <w>136</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Colegio
+--
++ nombre 
++ ubicacion
+- cantidad_estudiantes
+- cantidad_Cursos
+--
++ prestar_Instalaciones()
++ promover_Elecciones()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>680</x>
+      <y>272</y>
+      <w>112</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Voto
+--
++ numero_Voto
++ cantidad_Votos
++ tipo_Voto
+# nombre_Candidato
+--
+# realizar_Voto()
++ contar_Votos()
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>384</x>
+      <y>504</y>
+      <w>104</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>
+Votante
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>680</x>
+      <y>464</y>
+      <w>136</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Resultados
+--
++ cantidad_Votos
++ ganador
++ fecha_Final
++ hora_Final
++ cantidad_Votos-Blanco
+- perdedores
++ cantidad_Votos_Nulos
+--
++ determinar_Ganador()
++ informar_Resultados()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>208</x>
+      <y>704</y>
+      <w>128</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Propuestas
+--
++ nombre_Candidato
++ numero_Propuesta
++ cantidad_Propuestas
+
+--
++ mostrar_Propuestas()
++ conocer_Propuestas()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>896</x>
+      <y>264</y>
+      <w>128</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Tiempo
+--
++ cantidad_Tiempo
++ fecha_Inicio
++ fecha_Fin
++ hora_Inicio
++ hora_Fin
+
+--
++ conocer_Tiempo()
++ determinar_Tiempo()
+- finalizar_Tiempo()
+- iniciar_Tiempo()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>432</x>
+      <y>584</y>
+      <w>144</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Color_Institucional
+--
++ nombre 
++ tipo_Candidato
+--
++ representar_Candidato()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>168</x>
+      <y>192</y>
+      <w>128</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Jornada
+--
++ nombre_Jornada
+- cantidad_Estudiantes
++ cantidad_Candidatos
+- cantidad_Cursos
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>528</y>
+      <w>120</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Cargo
+--
++ tipo_Cargo
+- cantidad_candidatos
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>672</x>
+      <y>104</y>
+      <w>152</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Administrador
+--
++ nombre 
+- numero_Identificacion
++ edad
++ correo_Electronico
+--
+- guardar_Bd()
+- definir_Fecha_Votacion()
+- definir_Tiempo_Votacion()
++ mostrar_Propuestas()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>248</x>
+      <y>304</y>
+      <w>168</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>152;24;24;24;24;200</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>408</x>
+      <y>344</y>
+      <w>40</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;24;160</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>328</x>
+      <y>40</y>
+      <w>136</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Curso
+--
++ nombre_Curso
++ cantidad_Estudiantes
++ horario
++ representante
++ director_Curso
+--
++ contener_Estudiantes()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>272</x>
+      <y>192</y>
+      <w>144</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+m2=1
+Contiene&gt;</panel_attributes>
+    <additional_attributes>128;40;64;40;24;40</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>208</x>
+      <y>88</y>
+      <w>136</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+m2= 1
+Contiene&gt;</panel_attributes>
+    <additional_attributes>120;40;64;40;32;40;32;104</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>96</x>
+      <y>512</y>
+      <w>128</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+&lt; Tiene</panel_attributes>
+    <additional_attributes>24;40;112;40</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>616</y>
+      <w>40</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;88;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>440</x>
+      <y>48</y>
+      <w>88</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;72;24;72;128</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>320</x>
+      <y>584</y>
+      <w>128</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+Selecciona&gt;</panel_attributes>
+    <additional_attributes>24;40;112;40</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>520</x>
+      <y>280</y>
+      <w>176</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+Realiza&gt;</panel_attributes>
+    <additional_attributes>24;40;160;40</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>712</x>
+      <y>352</y>
+      <w>40</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;24;112</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>768</x>
+      <y>280</y>
+      <w>144</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=1
+Se Realizan En&gt;</panel_attributes>
+    <additional_attributes>24;40;128;40</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>200</x>
+      <y>24</y>
+      <w>144</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;128;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>520</x>
+      <y>168</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+m2=1
+&lt; Guarda</panel_attributes>
+    <additional_attributes>24;40;152;40</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>800</x>
+      <y>128</y>
+      <w>176</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=  2
+m2=1
+&lt;Determina</panel_attributes>
+    <additional_attributes>160;136;160;40;88;40;24;40</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>488</x>
+      <y>344</y>
+      <w>208</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=     0..n
+m2=1
+            
+
+Conocen&gt;</panel_attributes>
+    <additional_attributes>32;24;32;176;72;176;192;176</additional_attributes>
+  </element>
+</diagram>
